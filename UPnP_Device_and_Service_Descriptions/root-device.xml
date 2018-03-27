@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <URLBase>%(urlbase)s</URLBase>
+  <device>
+<!-- must be urn followed by domain followed by "device" -->
+    <deviceType>urn:telegraphmedia-com:device:KaraokeServer:1</deviceType>
+    <friendlyName>PyKServ (%(hostname)s)</friendlyName>
+    <manufacturer>None</manufacturer>
+    <manufacturerURL>http://www.nourl.com/</manufacturerURL>
+    <modelDescription>None</modelDescription>
+    <modelName>PC-KaraokeServer</modelName>
+    <modelNumber>1</modelNumber>
+    <modelURL>about:blank</modelURL>
+    <serialNumber>0</serialNumber>
+    <UDN>%(uuid)s</UDN>
+    <UPC/>
+    <serviceList>
+      <service>
+	<serviceType>urn:schemas-telegraphmedia-com:service:KaraokeManager:1</serviceType>
+	<serviceId>urn:telegraphmedia-com:serviceId:KaraokeManager</serviceId>
+	<SCPDURL>KaraokeManager/scpd.xml</SCPDURL>
+	<controlURL>KaraokeManager/control</controlURL>
+	<eventSubURL>KaraokeManager/event</eventSubURL>
+      </service>
+    </serviceList>
+    <deviceList/>
+  </device>
+</root>

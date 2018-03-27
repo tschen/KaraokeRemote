@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Karaoke Remote (Beta)</string>
+    <string name="song_book">SONGBOOK</string>
+    <string name="playlist">PLAYLIST</string>
+    <string name="searching_for_karaoke_servers">Searching for karaoke servers&#8230;</string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="connect">Connect</string>
+    <string name="rescan">Rescan</string>
+    <string name="no_servers_found">Sorry, no servers were found.</string>
+    <string name="search_box">Search Box</string>
+    <string name="stop">Stop</string>
+    <string name="sortedByArtist">Sorted By Artist</string>
+    <string name="sortedByTitle">Sorted By Title</string>
+    <string name="play">Play</string>
+    <string name="skipSong">Skip Song</string>
+    <string name="search_hint">Search by title or artist</string>
+    <string name="play_now">Play Now</string>
+    <string name="play_next">Play Next</string>
+    <string name="connection_failed_title">Server Connection Failed</string>
+    <string name="connection_failed_text">Restart Karaoke Remote?</string>
+    <string name="browse_failed_title">Songbook Download Failed</string>
+    <string name="browse_failed_text">Retry download?</string>
+    <string name="service_namespace">telegraphmedia-com</string>
+    <string name="serviceID">KaraokeManager</string>
+    <string name="reset">Reset Remote</string>
+    <string name="download_songbook">Downloading songbook&#8230;</string>
+    <string name="select_server">Select A Karaoke Server</string>
+
+</resources>

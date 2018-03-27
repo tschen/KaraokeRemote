@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scpd xmlns="urn:schemas-upnp-org:service-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <actionList>
+    <action>
+      <name>Browse</name>
+      <argumentList>
+	<argument>
+	  <name>Result</name>
+	  <direction>out</direction>
+	  <relatedStateVariable>A_ARG_TYPE_Result</relatedStateVariable>
+	</argument>
+      </argumentList>
+    </action>
+    <action>
+      <name>GetPlaylist</name>
+      <argumentList>
+	<argument>
+	  <name>Playlist</name>
+	  <direction>out</direction>
+	  <relatedStateVariable>Playlist</relatedStateVariable>
+	</argument>
+      </argumentList>
+    </action>
+    <action>
+      <name>AddToPlaylist</name>
+      <argumentList>
+	<argument>
+	  <name>Title</name>
+	  <direction>in</direction>
+	  <relatedStateVariable>Title</relatedStateVariable>
+	</argument>
+	<argument>
+	  <name>Artist</name>
+	  <direction>in</direction>
+	  <relatedStateVariable>Artist</relatedStateVariable>
+	</argument>
+	<argument>
+	  <name>FilePath</name>
+	  <direction>in</direction>
+	  <relatedStateVariable>FilePath</relatedStateVariable>
+	</argument>
+      </argumentList>
+    </action>
+    <action>
+      <name>PlayNow</name>
+      <argumentList>
+	<argument>
+	  <name>Title</name>
+	  <direction>in</direction>
+	  <relatedStateVariable>Title</relatedStateVariable>
+	</argument>
+	<argument>
+	  <name>Artist</name>
+	  <direction>in</direction>
+	  <relatedStateVariable>Artist</relatedStateVariable>
+	</argument>
+	<argument>
+	  <name>FilePath</name>
+	  <direction>in</direction>
+	  <relatedStateVariable>FilePath</relatedStateVariable>
+	</argument>
+      </argumentList>
+    </action>
+    <action>
+      <name>PlayNext</name>
+      <argumentList>
+	<argument>
+	  <name>Title</name>
+	  <direction>in</direction>
+	  <relatedStateVariable>Title</relatedStateVariable>
+	</argument>
+	<argument>
+	  <name>Artist</name>
+	  <direction>in</direction>
+	  <relatedStateVariable>Artist</relatedStateVariable>
+	</argument>
+	<argument>
+	  <name>FilePath</name>
+	  <direction>in</direction>
+	  <relatedStateVariable>FilePath</relatedStateVariable>
+	</argument>
+      </argumentList>
+    </action>
+    <action>
+      <name>PlaylistStart</name>
+    </action>
+    <action>
+      <name>PlaylistSkipSong</name>
+    </action>
+    <action>
+      <name>PlaylistStop</name>
+    </action>
+  </actionList>
+  <serviceStateTable>
+    <stateVariable sendEvents="yes">
+      <name>status</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_BrowseFlag</name>
+      <dataType>string</dataType>
+      <allowedValueList>
+	<allowedValue>BrowseMetadata</allowedValue>
+	<allowedValue>BrowseDirectChildren</allowedValue>
+      </allowedValueList>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_SearchCriteria</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>SystemUpdateID</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_Count</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_SortCriteria</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>SortCapabilities</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_Index</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_ObjectID</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_UpdateID</name>
+      <dataType>ui4</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_Result</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="yes">
+      <name>Playlist</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>SearchCapabilities</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>A_ARG_TYPE_Filter</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>Title</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>Artist</name>
+      <dataType>string</dataType>
+    </stateVariable>
+    <stateVariable sendEvents="no">
+      <name>FilePath</name>
+      <dataType>string</dataType>
+    </stateVariable>
+  </serviceStateTable>
+</scpd>
